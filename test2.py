@@ -27,7 +27,7 @@ def overlay_png(background, overlay, position):
 
     alpha_s = overlay[:, :, 3] / 255.0
     alpha_l = 1.0 - alpha_s
-q
+
     for c in range(0, 3):
         background[y:y+overlay_h, x:x+overlay_w, c] = (
             alpha_s * overlay[:, :, c] +
